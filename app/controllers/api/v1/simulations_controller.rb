@@ -46,6 +46,6 @@ class Api::V1::SimulationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def api_v1_simulation_params
-      params.require(:api_v1_simulation).permit(:hoursDay, :daysWeek, :months, :tubesConfiguration)
+      params.require(:api_v1_simulation).permit(:hoursDay, :daysWeek, :months, :tubesConfiguration, :cost, :brokenTubes)
     end
 end
